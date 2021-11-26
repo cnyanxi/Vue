@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相册</title>
+    <link rel="stylesheet" href="./css/photo.css">
+</head>
+
+<body>
+    <div id="top">
+        <div id="logo">
+            <img src="./image/logo.jpg" alt="">
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="./index.html">首页</a></li>
+                <li>xxx</li>
+                <li><a href="./photo.html">相册</a></li>
+                <li>xxx</li>
+                <li>xxx</li>
+            </ul>
+        </div>
+    </div>
+    <div id="center">
+        <div id="left">
+            <div id="idCard">
+                <div id="face">
+                    <img src="./image/face.jpg" alt="">
+                </div>
+                <div id="signature">
+                    <p class="name">王焱</p>
+                    <p class="autograph">阶段性成长</p>
+                </div>
+                <div id="blogLogo">
+                    <ul>
+                        <li><a href="https://github.com/cnyanxi"><img src="./image/github.png"></a></li>
+                        <li>
+                            <img src="./image/QQ.png" onmouseover="showQQ(this)" onmouseout="hideQQ()">
+                            <img src="./image/qqerweima.png" onmouseover="showQQ(this)" onmouseout="hideQQ()" id="QQimg"
+                                style="display: none">
+                        </li>
+                        <li>
+                            <img src="./image/weixin.png" onmouseover="showweixin(this)" onmouseout="hideweixin()">
+                            <img src="./image/weixinerweima.png" onmouseover="showweixin(this)"
+                                onmouseout="hideweixin()" id="weixinimg" style="display: none">
+                        </li>
+                        <li>
+                            <img src="./image/billbill.png" onmouseover="showbillbill(this)"
+                                onmouseout="hidebillbill()">
+                            <img src="./image/billbillerweima.png" onmouseover="showbillbill(this)"
+                                onmouseout="hidebillbill()" id="billbillimg" style="display: none">
+                        </li>
+                        <li><img src="./image/微博.png"></li>
+                    </ul>
+                </div>
+                <div id="clock">
+                    <ul>
+                    <li id="getHours"></li>
+                    <li>:</li>
+                    <li id="getMinutes"></li>
+                    <li>:</li>
+                    <li id="getSeconds"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="canvas_right">
+                 <h3>精选壁纸</h3>
+            <div id="slideshow" >   
+                <div id="leftButton" style="display: none"  onclick="turnLeft()" onmouseover="showButton()"> 
+                     <
+                </div> 
+                <div id="rightButton" style="display: none"  onclick="turnRight()" onmouseover="showButton()" > 
+                     >
+                </div>  
+                <div id="album"  onmouseover="showButton()" onmouseout="hideButton()">
+                    <img id="photo" src="./image/dm.png" /> 
+                </div>
+            </div>
+               <h3>随手拍</h3>
+            <div id="photos">
+               <div id="photo">
+                   <img src="./image/sea1.png" >
+               </div>
+               <div id="photo">
+                    <img src="./image/sea2.png" >
+               </div>
+               <div id="photo">
+                     <img src="./image/sea3.png">
+               </div>
+            </div>
+        </div>
+        <div id="backTop" style="display: none">
+            <img src="./image/huojian.png">
+        </div>
+    </div>
+    <div id="bottom">
+
+    </div>
+    <script src="./js/photo.js"></script>
+</body>
+
+</html>

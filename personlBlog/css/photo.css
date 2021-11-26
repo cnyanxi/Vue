@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{text-decoration: none;color:#333;}
+:root{
+    --box-shadow: 0 0 24px 0 rgba(0,0,0,0.1);
+}
+body{
+    width: 100%;
+}
+#backTop {
+    width: 50px;
+    height: 50px;
+    bottom: 80px;
+    right: 60px;
+    position: fixed;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+
+#backTop img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+#top{
+    height: 50px;
+    display: flex;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+#top #logo{
+   position: absolute;
+   left: 150px;
+}
+#top img{
+    width: 50px;
+    height: 50px;
+}
+#top #menu{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    left: 200px;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+#center{
+    margin: auto;
+    width: 84%;
+    height: 800px;
+    display: flex;
+}
+#center #left{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+}
+#idCard{
+    margin: 15px;
+    box-shadow: var(--box-shadow);
+    border-radius: 6px; 
+}
+#face{
+    width: 100px;   
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#face img{
+    width: 100px;
+    height: 100px;
+}
+#signature{
+    width: 150px;
+    height: 75px;
+    margin: auto;
+}
+#signature p{
+    text-align: center;
+    line-height: 37px;
+}
+#signature .name{
+  font-size: 25px;
+  font-family: "楷体";
+}
+#signature .autograph{
+  font-size: 15px;
+}
+#center #left #blogLogo{
+    width: 80%;
+    margin: auto;
+   
+}
+#center #left #blogLogo ul{
+   display: flex;
+}
+#center #left #blogLogo ul li{
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+#center #left #blogLogo ul img{
+    width:28px;
+    height: 28px;
+    z-index: 100;
+}
+#center #left #clock{
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: auto;
+    margin-bottom: 35px;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+}
+#center #left #clock li{
+    flex: 1;
+    margin-left: 5px;
+}
+
+#center #canvas_right{
+    flex: 3;
+    box-shadow: var(--box-shadow);
+    margin-top: 15px;
+    border-radius: 6px;   
+}
+#center #canvas_right h2{
+    text-align: center  ;
+}
+#center #canvas_right #slideshow #album img{
+  width: 100%;  
+  border-radius: 20px;
+}
+#center #canvas_right #slideshow{
+    padding: 6px;
+    position: relative;
+    cursor: pointer;
+  }
+#center #canvas_right #slideshow #leftButton{
+  position: absolute;
+  top: calc(50% - 20px);
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+}
+#center #canvas_right #slideshow #rightButton{
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  }
+#center #canvas_right #photos{
+    display: flex;
+    flex-direction:row;
+}
+#center #canvas_right #photos #photo{
+    flex: 1;
+    height: 200px;
+    margin: 10px;
+}
+#center #canvas_right #photos #photo img{
+    width: 300px;
+    height: 200px;
+}
+  
